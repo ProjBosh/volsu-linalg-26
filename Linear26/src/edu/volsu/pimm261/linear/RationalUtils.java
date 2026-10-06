@@ -30,9 +30,10 @@ public class RationalUtils {
 	public static Rational diff(Rational s, Rational t) {
 		return null; //TODO
 	}
-
+	
+	//Горох Алексей
 	public static Rational mult(Rational s, Rational t) {
-		return null; //TODO
+		return s.mult(t);
 	}
 
 	public static Rational div(Rational s, Rational t) {

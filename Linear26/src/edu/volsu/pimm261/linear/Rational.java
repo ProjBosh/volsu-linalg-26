@@ -93,10 +93,9 @@ public Rational diff(Rational that) {
 	return null;
 }
 
-
+//Горох Алексей
 public Rational mult(Rational that) {
-	// TODO произведение
-	return null;
+	return new Rational(this.numerator * that.numerator, this.denominator * that.denominator);
 }
 
 public Rational getInverse() {
