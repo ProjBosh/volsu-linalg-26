@@ -28,7 +28,9 @@ public class RationalUtils {
 	}
 
 	public static Rational diff(Rational s, Rational t) {
-		return null; //TODO
+		int numerator = s.getNumerator() * t.getDenominator() - t.getNumerator() * s.getDenominator();
+		int denominator = s.getDenominator() * t.getDenominator();
+		return new Rational(numerator, denominator);
 	}
 
 	public static Rational mult(Rational s, Rational t) {
@@ -36,7 +38,15 @@ public class RationalUtils {
 	}
 
 	public static Rational div(Rational s, Rational t) {
-		return null; //TODO
+		if (t.getNumerator() == 0)
+		{
+        	throw new ArithmeticException("Деление на ноль");
+    	}
+
+    	int numerator = s.getNumerator() * t.getDenominator();
+    	int denominator = s.getDenominator() * t.getNumerator();
+
+    	return new Rational(numerator, denominator);
 	}
 
 	public static Rational[] getRandomArray(int n) {
