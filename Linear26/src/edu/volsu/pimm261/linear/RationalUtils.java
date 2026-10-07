@@ -32,9 +32,10 @@ public class RationalUtils {
 		int denominator = s.getDenominator() * t.getDenominator();
 		return new Rational(numerator, denominator);
 	}
-
+	
+	//Горох Алексей
 	public static Rational mult(Rational s, Rational t) {
-		return null; //TODO
+		return s.mult(t);
 	}
 
 	public static Rational div(Rational s, Rational t) {
